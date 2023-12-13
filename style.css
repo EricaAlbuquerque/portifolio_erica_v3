@@ -1,0 +1,569 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candara, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #141313;
+}
+
+h2{
+    font-size: 35px;
+    color: #94593A;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+/*_______________estilização menu*________________*/
+nav.menu{
+ width: 50px;
+ height: 100vh;
+ background-color: #0a0a0a;
+    /*top,right,bottom,left*/
+ padding: 40px 0 40 1%;
+ position:fixed;
+ top:0;
+ left: 0;
+ box-shadow:  3px 0 0 2px #4b5173;
+
+ overflow: hidden;
+ transition: .25s;
+}
+
+ /*para abrir e fechar*/
+nav.menu:hover{
+ width:280px;
+}
+/*menu inicio*/
+.btn_expandir{
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.btn_expandir i{
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+ul{
+ height: 100%;
+ list-style-type: none;
+}
+
+ul li.item-menu:hover{
+  background: #4b5173;
+  transition: .23s;
+}
+ 
+ul li.item-menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4% 0 2.5%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+
+ }
+ ul li.item-menu a .txt-link{
+  margin-left: 22px;
+  margin-bottom: 10px;
+ }
+ul li.item-menu a .icon i {
+  font-size: 30px;
+  margin-left: 10px;
+    
+}
+/*__________estilização topo do site_________*/
+section.site_topo{
+ padding: 50px 4%;
+}
+section.site_topo .flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  margin: 55px;
+  cursor: pointer;
+    
+}
+.site_topo h1{
+  font-size: 100px;
+  color: #ffffff;
+  line-height: 75px;
+  padding-bottom: 20px;
+  text-shadow: 2px 3px #94593A;
+
+}
+.site_topo p{
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 20px;
+  padding-bottom: 25px;
+
+}
+
+.site_topo .btn_contato button{
+  padding:10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border:none;
+  color: #ffffff;
+  background-color: #4b5173;
+  box-shadow: 2px 3px #94593A;
+    
+}
+.site_topo .btn_contato button:hover{
+ background-color: #6770a1;
+}
+
+.site_topo .img_topo img{
+  width: 450px;
+  height: 390px;
+  padding-top: 25px;
+}
+
+/*___________estilização sobre_____________*/
+
+section .container_interface{
+  padding:40px 4%  0  4%;
+}
+
+section.about .container_interface{
+   margin: 15px;
+}
+
+section .about_txt{
+ color: #ffffff;
+ line-height: 20px;
+ text-align: center;
+ padding-top: 25px;
+  
+}
+
+section.about .flex{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap:40px;
+ padding-top: 20px; 
+}
+
+section.about img{
+  height: 360px;
+  border-radius: 20px;
+  box-shadow: 3px 4px #4b5173;
+  margin-left: 25px;
+}
+
+.about  i:hover{
+color: #6770a1;
+
+}
+
+.about .social_media button{
+ height:40px ;
+ width: 40px;
+ border: none;
+ background-color: transparent;
+ color: #4b5173;
+ cursor: pointer;
+ font-size: 40px;
+ margin: 0 5px;
+}
+
+/*_________estilização habilidades_____________*/
+section .habilidades{
+    padding: 10px 2%  10px 2%;
+    
+}
+
+section.habilidades .flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+/*____icones habilidades_______*/
+section.habilidades i{
+ font-size:  75px;
+}
+
+section.habilidades svg{
+  width: 75px;
+  height: 75px;
+}
+/*_______estilização projetos_________*/
+
+section.projetos .flex {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ margin: 25px;
+ gap:30px;
+    
+}
+section.projetos .flex2{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 18px 10px 15% 25px;
+ gap:30px;
+    
+}
+
+section.projetos button{
+ width: 250px;
+ height: 250px;
+ background-color: transparent;
+ border: 2px solid #4b5173;
+ border-radius: 10px;
+ cursor:pointer;
+}
+
+section.projetos button:hover{
+ background-color: #6770a118;
+ transition: 0.5s;
+}
+section.projetos button p{
+ color:#ffffff;
+ margin:10px;
+}
+
+/*_____estilização contato________*/
+section.contato{
+ margin-top: 10%;
+ padding-bottom: 20px;
+}
+
+section.contato .content-box {
+  max-width: 950px;  
+}
+
+section.contato .card-form {
+ width: 350px;
+ height: 320px;
+ margin:5% 10% 5% 10%;
+ border-radius: 4px;
+ text-align: center;  
+    
+}
+
+section.contato .card-form input {
+ width: 300px;
+ height: 35px;
+ text-align: center;
+ border-radius: 4px;
+ border: none;
+ box-shadow: 2px 2px #4b5173;
+ font-size: 20px;
+  
+}
+
+section.contato #form label {
+ font-size: 14px;
+ color: white;
+ line-height: 25px;
+}
+
+section.contato #form textarea {
+ width: 300px;
+ height: 90px;
+ border: 0;
+ box-shadow: 2px 2px #4b5173;
+ border-radius: 4px;
+ resize: vertical;
+ font-size: 20px;
+ text-align: center;
+}
+
+#form button {
+ width: 100px;
+ height: 40px;
+ margin-top: 10px;
+ border: none;
+ border-radius: 5px;
+ color: white;
+ background-color: #4b5173;
+ box-shadow: 2px 2px #0c0418;
+ text-align: center;
+ font-size: 18px;
+}
+
+.container-footer {
+ background-color: #4b5173;
+ height: 50px;
+ justify-content: center;
+ text-align: center;
+}
+
+.container-footer p {
+ text-align: center;
+ color: #FFF;
+ padding-top: 10px;
+ font-size: 20px;
+}
+
+/*_____formatação de responsividade_______*/
+@media only screen and (max-width: 1020px) {
+    
+     /*cabeçaçho*/
+    section.site_topo .flex{
+        flex-direction: column-reverse;
+    }
+    section.projetos .flex  {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    section.projetos .flex2 {
+        flex-direction: column;
+        max-width: 90%;
+     }
+     form {
+        max-width: 90%;
+        max-width: 350px;
+    }
+
+}
+@media only screen and (max-width: 920px) {
+    section.about .flex{
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+    section.site_topo h1{
+        font-size: 65px;
+    }
+
+    }
+@media only screen and (max-width: 428px) {
+
+    section.site_topo .flex img{
+        height: 300px;
+        width: 300px;
+    }
+    section.site_topo h1{
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    section.about .container_interface{
+        padding: 30px 5% 0px 10%;
+    }
+    section.about .container_interface img{
+        height: 280px;
+    }
+
+ section.habilidades .container_interface{
+    flex-direction: column;
+    padding-left: 25px;
+ }
+ 
+ section.projetos .container_interface{
+    padding-left:15%;
+ }
+
+ form {
+    max-width: 90%;
+    max-width: 430px;
+}
+footer .container-footer p{
+    font-size: 15px;
+    text-align: center;
+    justify-content:center;
+ 
+  }     
+
+}
+
+/*_____geralmente utilizada em Iphone 12 ou +______*/
+@media (max-width:390px)  {
+
+body {
+    overflow-x: hidden;
+    min-width: 390px;
+    box-sizing: border-box;
+    }
+nav.menu{
+   width: 30px;
+   height: 100%;
+
+}
+/*tamnaho do menu ao abrir*/
+nav.menu:hover{
+  width: 110px;
+}
+.btn_expandir{
+    width: 100%;
+    padding-left :5px;
+    padding-bottom: 20px;
+}
+
+/*tamnaho menu hambuguer*/
+.btn_expandir > i{
+    font-size: 22px;
+}
+/*tamanho dos texto dos icones*/
+ul li.item-menu a{
+    font-size: 15px;
+    line-height:15px;
+    padding-bottom: 10px;
+}
+
+/*tamnaho dos icones*/
+ul li.item-menu a .icon i {
+    font-size: 15px;
+    margin-left: 5px; 
+    padding-bottom: 20px;  
+  }
+
+  section.site_topo h1{
+        font-size: 40px;
+        line-height:35x;
+    }
+
+  section.site_topo .flex img{
+        height: 280px;
+        width: 280px;
+        margin-left: 5px;
+    }
+  
+
+  section.habilidades .flex{
+    flex-direction: column;
+}
+
+.habilidades h2{
+    
+}
+section.projetos button{
+    width: 200px;
+    height: 200px;
+}
+
+
+footer .container-footer p{
+    font-size: 15px;
+    padding-left: 10px;
+    max-width: 390px;
+    text-align: center;
+    justify-content:center;
+ 
+  }     
+     
+}
+
+ 
+/*______geralmete utilizada em galaxy_______*/
+@media only screen and (max-width: 360px) {
+body {
+    overflow-x: hidden;
+    min-width: 360px;
+    box-sizing: border-box;
+}
+  
+    nav.menu{
+      width: 28px;
+      height: 100%;
+      
+    }
+    nav.menu:hover{
+        width: 110px;
+
+      }
+
+    .btn_expandir{
+        width: 100%;
+        padding-left :5px;
+        padding-bottom: 20px;
+    }
+
+    .btn_expandir > i{
+        font-size: 15px;
+    }
+    
+  /*texto dos icones*/
+    ul li.item-menu a{
+        font-size: 15px;
+        line-height: 18px;
+        
+        padding-bottom: 10px;
+    }
+
+    ul li.item-menu a .txt-link{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+/*tamanho dos icones*/
+    ul li.item-menu a .icon i {
+        font-size: 15px;
+        margin-left: 5px;  
+        margin-right: 8px; 
+      }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    section.site_topo .flex img{
+        height: 230px;
+        width: 230px;
+        
+    }
+    section.site_topo h1{
+        font-size: 10vw;
+    }
+    .site_topo p{
+        font-size: 15px;
+    }
+    .site_topo .btn_contato button{
+        width: 150px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .site_topo  { 
+        max-width: 360px;
+    }
+
+    section.about .about_txt{
+        font-size: 3.5vw;
+    }
+    section.about .flex{
+        max-width:360px
+    }
+    section.about .flex img{
+        height: 200px;
+        width: 175px;
+        border-radius: 8px;
+    }
+
+    section.projetos .container_interface{
+     max-width: 90%;
+    }
+    section.projetos button{
+        width: 190px;
+        height: 175px;
+    }
+    section.contato .card-form input textarea {
+        max-width: 60%;
+    }
+
+    footer{
+        max-width: 360px;
+    
+    }
+    footer p{
+        font-size: 8px;
+        text-align: center;
+    }
+
+
+    }

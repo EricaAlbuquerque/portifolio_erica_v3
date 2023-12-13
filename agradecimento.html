@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Candara, Helvetica, sans-serif;
+        font-size: 48px;
+        margin-top: 15%;
+        color: #FFFFFF;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        justify-content: center;
+        background-color: #0f121f;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    button{
+        border-radius: 10px;
+        height: 50px;
+        width: 120px;
+        font-size: 18px;
+        color: #FFFFFF;
+        border:none;
+        box-shadow: 2px 2px #30385b;
+        background-color: #94593A;
+        
+    }
+
+    @media only screen and (max-width: 360px)  {
+        .container{
+            max-width: 365px;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img{
+            height: 175px;
+            width: 200px;
+        }
+        .container button{
+            height: 40px;
+            width: 90px;
+        }
+    }
+    @media only screen and (max-width: 428px)  {
+        .container{
+            max-width: 90%;
+            flex-direction: column;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img{
+            height: 185px;
+            width: 200px;
+        }
+        .container button{
+            height: 40px;
+            width: 90px;
+        }
+    }
+    @media only screen and (max-width: 768px)  {
+        .container{
+            max-width: 90%;
+            flex-direction: column;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img{
+            height: 185px;
+            width: 200px;
+        }
+        .container button{
+            height: 40px;
+            width: 90px;
+        }
+    }
+    @media only screen and (max-width: 1220px)  {
+        .container{
+            max-width: 90%;
+            flex-direction: column;
+            font-size: 32px;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img{
+            height: 250px;
+            width: 250px;
+        }
+        .container button{
+            height: 40px;
+            width: 90px;
+        }
+    }
+ 
+
+</style>
+<body>
+    <div class="container">
+        <img src="logo_portifolio.png" alt="">
+        <p>Obrigada pela mensagem! </p><br/>
+        <button> Voltar <a href="index.html"></a></button>
+    </div>
+   
+    
+</body>
+</html>
